@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="https://cdn.pixabay.com/vimeo/256955049/saigon-14385.mp4?width=1280&hash=3e5f8905ae9db3698a79a23e073f7818717a8b4d" type="video/mp4">
+    </video>
+
+    <div class="container">
+        <h1>Weather App</h1>
+        
+        <div class="d-flex justify-content-row">
+            <input type="text" id="locationInput" placeholder="Enter a city">
+            <button id="searchButton">Get Weather</button>
+        </div>
+
+        <div id="weather-info" class="d-flex flex-column align-items-center">
+            <img id="weather-icon">
+            <p id="temperature"></p>
+            <p id="weather-description"></p>
+            <div class="additional-info">
+                <p id="feelsLike"></p>
+                <p id="humidity"></p>
+                <p id="windSpeed"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
